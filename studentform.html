@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .form-container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2, h3, h4 {
+      text-align: center;
+      margin: 10px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td, th {
+      border: 1px solid #ccc;
+      padding: 8px;
+      vertical-align: top;
+    }
+    input[type="text"], input[type="number"], input[type="date"], input[type="email"], textarea, select {
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 60px;
+    }
+    .no-border {
+      border: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN(A)</h2>
+  <p style="text-align: center;">
+    Madhurawada :: Visakhapatnam – 530 048<br>
+    (Approved by AICTE, Affiliated to Andhra University)<br>
+    Accredited by NAAC with “A” (2022–2027), NBA (2019–2026)<br>
+    Email: gvpcow@gmail.com | Website: www.gvpcow.ac.in
+  </p>
+
+  <h3>STUDENT PROFILE</h3>
+
+  <form>
+    <table>
+      <tr>
+        <td><label for="htno">H.T NO.</label><br><input type="text" id="htno"></td>
+        <td colspan="2"><label for="name">Name of the Student (as per SSC)</label><br><input type="text" id="name"></td>
+        <td><label for="branch">Branch</label><br><input type="text" id="branch"></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth (as per SSC)</label><br><input type="text" id="dob" placeholder="DD-MM-YYYY"></td>
+        <td><label for="aadhar">Aadhar No.</label><br><input type="text" id="aadhar"></td>
+        <td><label for="mobile">Mobile No. (Self)</label><br><input type="text" id="mobile"></td>
+        <td><label for="email">Email ID</label><br><input type="email" id="email"></td>
+      </tr>
+    </table>
+
+    <h4>Educational Details</h4>
+    <table>
+      <tr>
+        <th>SSC / CBSE</th>
+        <th>School of Study & Place</th>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="% of Marks, Grade"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>INTERMEDIATE / +2 / DIPLOMA</th>
+        <th>College of Study & Place</th>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="% of Marks, Grade"></td>
+        <td><input type="text"></td>
+      </tr>
+    </table>
+
+    <h4>Qualifying Examination Details</h4>
+    <table>
+      <tr>
+        <th colspan="2">EAMCET</th>
+        <th colspan="2">JEE</th>
+        <th colspan="2">ECET (Diploma)</th>
+      </tr>
+      <tr>
+        <td>H.T NO</td><td><input type="text" placeholder="Year, Rank"></td>
+        <td>H.T NO</td><td><input type="text" placeholder="Year, Rank"></td>
+        <td>H.T NO</td><td><input type="text" placeholder="Year, Rank"></td>
+      </tr>
+    </table>
+
+    <h4>Admission Details</h4>
+    <table>
+      <tr>
+        <td><label>Category of Admission</label><br>
+          <select>
+            <option>EAMCET</option>
+            <option>SPOT</option>
+            <option>ECET</option>
+          </select>
+        </td>
+        <td><label>Nationality & Religion</label><br><input type="text"></td>
+        <td><label>Caste & Category</label><br><input type="text"></td>
+        <td><label>State to which belongs to</label><br><input type="text" placeholder="e.g., AP"></td>
+      </tr>
+      <tr>
+        <td><label>Category</label><br>
+          <select>
+            <option>Cat A</option>
+            <option>Cat B</option>
+          </select>
+        </td>
+        <td colspan="3"><label>Availing AP Govt. Fee Reimbursement Scheme</label><br>
+          <select>
+            <option>YES</option>
+            <option>NO</option>
+            <option>EWS</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <h4>Details of Parents</h4>
+    <table>
+      <tr><th>Father's Name</th><th>Mother's Name</th></tr>
+      <tr>
+        <td><input type="text" placeholder="Father's Name"></td>
+        <td><input type="text" placeholder="Mother's Name"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Qualification"></td>
+        <td><input type="text" placeholder="Qualification"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Occupation"></td>
+        <td><input type="text" placeholder="Occupation"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Annual Income"></td>
+        <td><input type="text" placeholder="Annual Income"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Landline (Off/Res)"></td>
+        <td><input type="text" placeholder="Landline (Off/Res)"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Mobile No."></td>
+        <td><input type="text" placeholder="Mobile No."></td>
+      </tr>
+      <tr>
+        <td><input type="email" placeholder="Email ID"></td>
+        <td><input type="email" placeholder="Email ID"></td>
+      </tr>
+      <tr>
+        <td><textarea placeholder="Permanent Address"></textarea></td>
+        <td><textarea placeholder="Contact Address"></textarea></td>
+      </tr>
+    </table>
+
+    <h4>Details of Hostel (if any) / Local Guardian</h4>
+    <table>
+      <tr>
+        <td><label>Hostel Type</label><br>
+          <select>
+            <option>College</option>
+            <option>Government</option>
+            <option>Outside</option>
+          </select>
+        </td>
+        <td><label>Local Guardian Name</label><br><input type="text"></td>
+      </tr>
+      <tr>
+        <td><label>Hostel Name & Address</label><br><textarea></textarea></td>
+        <td><label>Guardian Address</label><br><textarea></textarea></td>
+      </tr>
+      <tr>
+        <td><label>Hostel Phone / Mobile</label><br><input type="text"></td>
+        <td><label>Guardian Phone / Mobile</label><br><input type="text"></td>
+      </tr>
+    </table>
+
+    <div style="text-align:center;">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
